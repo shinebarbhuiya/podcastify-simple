@@ -31,4 +31,7 @@ func RegisterRoutes(e *echo.Echo, cfg *config.Config) {
 
 	// Health check
 	e.GET("/health", podcastHandler.HealthCheck)
+
+	// Home route
+	e.GET("/", podcastHandler.Home)
 }

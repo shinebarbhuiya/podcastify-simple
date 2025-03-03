@@ -14,7 +14,7 @@ type Config struct {
 }
 
 func Load() *Config {
-	rateLimit, _ := strconv.Atoi(getEnv("RATE_LIMIT", "100")) // 5 requests in 1 minute
+	rateLimit, _ := strconv.Atoi(getEnv("RATE_LIMIT", "100")) // 100 requests in 1 minute
 	window, _ := strconv.Atoi(getEnv("RATE_WINDOW", "1"))     // 1 minute
 	timeout, _ := strconv.Atoi(getEnv("TIMEOUT", "5"))
 
