@@ -1,0 +1,92 @@
+# Frontend
+frontend-ui/node_modules/
+
+# Logs
+frontend-ui/logs
+frontend-ui/*.log
+frontend-ui/npm-debug.log*
+frontend-ui/yarn-debug.log*
+frontend-ui/yarn-error.log*
+frontend-ui/pnpm-debug.log*
+frontend-ui/lerna-debug.log*
+
+# Build outputs
+frontend-ui/dist
+frontend-ui/dist-ssr
+frontend-ui/*.local
+
+# Editor directories and files
+frontend-ui/.vscode/*
+!frontend-ui/.vscode/extensions.json
+frontend-ui/.idea
+frontend-ui/.DS_Store
+frontend-ui/*.suo
+frontend-ui/*.ntvs*
+frontend-ui/*.njsproj
+frontend-ui/*.sln
+frontend-ui/*.sw?
+
+# Environment files
+frontend-ui/.env
+frontend-ui/.env.local
+frontend-ui/.env.development.local
+frontend-ui/.env.test.local
+frontend-ui/.env.production.local
+
+# Testing
+frontend-ui/coverage
+
+# Misc
+frontend-ui/.cache
+frontend-ui/.temp
+frontend-ui/.tmp
+frontend-ui/build
+
+# Go binaries and build outputs
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace file
+go.work
+
+# Go binary directory
+bin/
+
+# Go build cache
+.cache/
+
+# Go test cache
+testdata/
+
+# Go coverage outputs
+*.cover
+coverage.html
+
+# Go profiling data
+*.prof
+
+# Go debug binaries
+__debug_bin*
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+

@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SERVER_PORT=8080
+      - RATE_LIMIT=100
+      - RATE_WINDOW=1
+      - TIMEOUT=5
+      - PODCAST_SERVICE_URL=https://601f1754b5a0e9001706a292.mockapi.io
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend-ui/Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
